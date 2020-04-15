@@ -1,0 +1,317 @@
+2020-04-15 12:21:54,074 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 12:27:13,014 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 12:27:14,626 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 12:27:22,552 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 12:27:24,354 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 12:27:39,882 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 2866
+2020-04-15 12:27:43,154 root         INFO     This is post
+2020-04-15 12:27:43,154 root         INFO     before validation
+2020-04-15 12:27:43,394 django.server INFO     "POST /login/?next=/ HTTP/1.1" 200 2880
+2020-04-15 12:27:59,988 django.server INFO     "GET /admin HTTP/1.1" 301 0
+2020-04-15 12:28:00,037 django.server INFO     "GET /admin/ HTTP/1.1" 302 0
+2020-04-15 12:28:00,105 django.server INFO     "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1913
+2020-04-15 12:28:00,263 django.server INFO     "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+2020-04-15 12:28:00,265 django.server INFO     "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+2020-04-15 12:28:00,267 django.server INFO     "GET /static/admin/css/responsive.css HTTP/1.1" 200 18052
+2020-04-15 12:28:00,287 django.server INFO     "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2020-04-15 12:28:00,328 django.server INFO     "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+2020-04-15 12:28:00,333 django.server INFO     "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+2020-04-15 12:28:05,829 django.server INFO     "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2074
+2020-04-15 12:28:05,956 django.server INFO     "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+2020-04-15 12:28:13,678 django.server INFO     "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2072
+2020-04-15 12:28:17,448 django.server INFO     "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2072
+2020-04-15 12:28:21,168 django.server INFO     "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2020-04-15 12:28:21,207 django.server INFO     "GET /admin/ HTTP/1.1" 200 5027
+2020-04-15 12:28:21,301 django.server INFO     "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+2020-04-15 12:28:21,354 django.server INFO     "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2020-04-15 12:28:21,354 django.server INFO     "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+2020-04-15 12:28:21,358 django.server INFO     "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2020-04-15 12:28:28,430 django.server INFO     "GET /admin/logout/ HTTP/1.1" 200 1207
+2020-04-15 12:28:31,224 django.server INFO     "GET / HTTP/1.1" 302 0
+2020-04-15 12:28:31,262 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 2866
+2020-04-15 12:28:38,434 root         INFO     This is post
+2020-04-15 12:28:38,434 root         INFO     before validation
+2020-04-15 12:28:38,672 root         INFO     form is valid
+2020-04-15 12:28:38,931 django.server INFO     "POST /login/?next=/ HTTP/1.1" 200 2632
+2020-04-15 12:34:09,998 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 2866
+2020-04-15 12:34:12,752 root         INFO     This is post
+2020-04-15 12:34:12,752 root         INFO     before validation
+2020-04-15 12:34:13,075 django.server INFO     "POST /login/?next=/ HTTP/1.1" 200 2880
+2020-04-15 12:34:22,254 root         INFO     This is post
+2020-04-15 12:34:22,254 root         INFO     before validation
+2020-04-15 12:34:22,461 django.server INFO     "POST /login/?next=/ HTTP/1.1" 200 2878
+2020-04-15 12:34:35,915 root         INFO     This is post
+2020-04-15 12:34:35,916 root         INFO     before validation
+2020-04-15 12:34:36,105 root         INFO     form is valid
+2020-04-15 12:34:36,394 django.server INFO     "POST /login/?next=/ HTTP/1.1" 200 2632
+2020-04-15 12:34:54,316 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 12:34:57,404 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 12:35:00,515 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 2866
+2020-04-15 12:36:13,797 root         INFO     This is post
+2020-04-15 12:36:13,797 root         INFO     before validation
+2020-04-15 12:36:14,033 root         INFO     form is valid
+2020-04-15 12:36:14,341 root         INFO     Login successful
+2020-04-15 12:36:14,361 django.server INFO     "POST /login/?next=/ HTTP/1.1" 200 2632
+2020-04-15 12:38:36,869 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 12:38:38,432 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 12:41:30,956 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 12:41:34,292 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 12:50:28,624 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3077
+2020-04-15 12:50:28,777 django.request WARNING  Not Found: /login/cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css
+2020-04-15 12:50:28,778 django.server WARNING  "GET /login/cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css HTTP/1.1" 404 2802
+2020-04-15 12:50:28,790 django.request WARNING  Not Found: /login/cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js
+2020-04-15 12:50:28,791 django.server WARNING  "GET /login/cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js HTTP/1.1" 404 2796
+2020-04-15 12:50:29,040 django.request WARNING  Not Found: /login/cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js
+2020-04-15 12:50:29,041 django.server WARNING  "GET /login/cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js HTTP/1.1" 404 2796
+2020-04-15 12:50:49,097 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3085
+2020-04-15 12:50:49,247 django.server INFO     "GET /static/manager/css/semantic.css HTTP/1.1" 200 1633056
+2020-04-15 12:50:49,383 django.server INFO     "GET /static/manager/js/semantic.js HTTP/1.1" 200 970784
+2020-04-15 12:50:49,486 django.request WARNING  Not Found: /login/cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js
+2020-04-15 12:50:49,487 django.server WARNING  "GET /login/cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js HTTP/1.1" 404 2796
+2020-04-15 12:50:49,913 django.request WARNING  Not Found: /login/cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js
+2020-04-15 12:50:49,914 django.server WARNING  "GET /login/cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js HTTP/1.1" 404 2796
+2020-04-15 12:50:50,015 django.server INFO     "GET /static/manager/css/themes/default/assets/fonts/icons.woff2 HTTP/1.1" 200 40148
+2020-04-15 12:50:50,015 django.server INFO     "GET /static/manager/css/themes/default/assets/fonts/brand-icons.woff2 HTTP/1.1" 200 54488
+2020-04-15 12:50:50,179 django.request WARNING  Not Found: /favicon.ico
+2020-04-15 12:50:50,180 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2619
+2020-04-15 12:51:24,141 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3093
+2020-04-15 12:51:24,343 django.server INFO     "GET /static/manager/css/semantic.css HTTP/1.1" 200 1633056
+2020-04-15 12:51:24,408 django.server INFO     "GET /static/manager/js/semantic.js HTTP/1.1" 200 970784
+2020-04-15 12:51:24,866 django.server INFO     "GET /static/manager/css/themes/default/assets/fonts/icons.woff2 HTTP/1.1" 200 40148
+2020-04-15 12:51:24,866 django.server INFO     "GET /static/manager/css/themes/default/assets/fonts/brand-icons.woff2 HTTP/1.1" 200 54488
+2020-04-15 12:51:25,047 django.request WARNING  Not Found: /favicon.ico
+2020-04-15 12:51:25,048 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2619
+2020-04-15 13:00:13,006 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 13:00:14,797 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:01:54,139 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3097
+2020-04-15 13:02:01,272 root         INFO     This is post
+2020-04-15 13:02:01,272 root         INFO     before validation
+2020-04-15 13:02:01,711 root         INFO     form is valid
+2020-04-15 13:02:02,107 root         INFO     Login successful
+2020-04-15 13:02:02,145 django.server INFO     "POST /login/?next=/ HTTP/1.1" 302 0
+2020-04-15 13:02:02,212 django.server INFO     "GET / HTTP/1.1" 200 1024
+2020-04-15 13:02:57,934 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 13:02:59,735 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:03:10,715 django.server INFO     "GET / HTTP/1.1" 200 1004
+2020-04-15 13:03:18,831 django.server INFO     "GET / HTTP/1.1" 302 0
+2020-04-15 13:03:18,895 django.request ERROR    Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py", line 17, in default_login
+    messages.info("davai")
+TypeError: info() missing 1 required positional argument: 'message'
+2020-04-15 13:03:18,896 django.server ERROR    "GET /login/?next=/ HTTP/1.1" 500 77821
+2020-04-15 13:03:19,078 django.request WARNING  Not Found: /favicon.ico
+2020-04-15 13:03:19,080 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2619
+2020-04-15 13:03:21,105 django.request ERROR    Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py", line 17, in default_login
+    messages.info("davai")
+TypeError: info() missing 1 required positional argument: 'message'
+2020-04-15 13:03:21,106 django.server ERROR    "GET /login/?next=/ HTTP/1.1" 500 77556
+2020-04-15 13:03:32,661 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 13:03:35,704 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:03:37,702 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3117
+2020-04-15 13:04:29,777 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3198
+2020-04-15 13:04:53,812 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3176
+2020-04-15 13:05:01,448 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3174
+2020-04-15 13:05:08,075 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3176
+2020-04-15 13:09:49,110 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 13:09:51,034 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:10:06,670 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 13:10:09,043 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:10:11,216 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3098
+2020-04-15 13:10:16,955 root         INFO     This is post
+2020-04-15 13:10:16,956 root         INFO     before validation
+2020-04-15 13:10:17,345 django.server INFO     "POST /login/?next=/ HTTP/1.1" 200 3110
+2020-04-15 13:10:45,158 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 13:10:47,973 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:10:48,325 root         INFO     This is post
+2020-04-15 13:10:48,325 root         INFO     before validation
+2020-04-15 13:10:48,847 django.server INFO     "POST /login/?next=/ HTTP/1.1" 200 3213
+2020-04-15 13:11:01,759 root         INFO     This is post
+2020-04-15 13:11:01,759 root         INFO     before validation
+2020-04-15 13:11:01,975 root         INFO     form is valid
+2020-04-15 13:11:02,269 root         INFO     Login successful
+2020-04-15 13:11:02,293 django.server INFO     "POST /login/?next=/ HTTP/1.1" 302 0
+2020-04-15 13:11:02,325 django.server INFO     "GET / HTTP/1.1" 200 1098
+2020-04-15 13:11:08,765 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3098
+2020-04-15 13:12:12,446 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3171
+2020-04-15 13:12:30,021 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3171
+2020-04-15 13:12:57,329 django.server INFO     "GET /social/login/spotify/ HTTP/1.1" 302 0
+2020-04-15 13:12:58,227 django.request ERROR    Internal Server Error: /social/complete/spotify/
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\social_django\utils.py", line 49, in wrapper
+    return func(request, backend, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\social_django\views.py", line 31, in complete
+    return do_complete(request.backend, _do_login, user=request.user,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\social_core\actions.py", line 43, in do_complete
+    user = backend.complete(user=user, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\social_core\backends\base.py", line 40, in complete
+    return self.auth_complete(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\social_core\utils.py", line 251, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\social_core\backends\oauth.py", line 404, in auth_complete
+    return self.do_auth(response['access_token'], response=response,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\social_core\utils.py", line 251, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\social_core\backends\oauth.py", line 416, in do_auth
+    return self.strategy.authenticate(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\social_django\strategy.py", line 107, in authenticate
+    return authenticate(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\contrib\auth\__init__.py", line 72, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\social_core\backends\base.py", line 80, in authenticate
+    return self.pipeline(pipeline, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\social_core\backends\base.py", line 83, in pipeline
+    out = self.run_pipeline(pipeline, pipeline_index, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\social_core\backends\base.py", line 113, in run_pipeline
+    result = func(*args, **out) or {}
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\social_core\pipeline\social_auth.py", line 23, in social_user
+    raise AuthAlreadyAssociated(backend, msg)
+social_core.exceptions.AuthAlreadyAssociated: This account is already in use.
+2020-04-15 13:12:58,232 django.server ERROR    "GET /social/complete/spotify/?code=AQCldpt3yLyIkHKEEC9CZgYBcihKtzElS_d5QrzPJhHbHLar0jNjjKbkPDzDXYVuTfCqEs_IApIq59k2dlovMGgIHgqxCXjmKFIggoDS_NmIazi3kBFZnzEZVJlLhYz_OC_ApNjeQ4hQFbwL1feOcPNIM62N6CQqdx3R8Jwb3N4Ibf8odXLQARHneUZKRc1NZT3AoCQsYjZMQn2Vn5nA4PaW20lVbVQju2jM9ra2_gIU31pjhJr1OjIK_6MBI8wQtawCUwDMcZhYTBQ-Lv3PF-QBp_1UZrTDNjsq5d43r05ICpbAyVbkvMlWZYxZGDF9gVV1rEKUh0kiBbLBjRsv5EUDX8QsZZkjor-2cVuDI_UIZDyaGPJXZa8DGKhA4slBboXXgLoiPbL2zjgjMtkkHPBfd24ftFhlr9AeK4869cn0y2BDG3cZJm6oFLulxGC1zoi5fYQwUHBTfQy1CVzzhBds41dt4gMmGnsFMWqQOnEAbPug6FEdHZ0sZH0IZb-WnhIZr5SgeJZpiXTfZQzHHPC3mzeYSZ1iwPHRAFFyH0jBysEb6DVxsDcXJUl34zJDX01fwrQzsTrjuY-VWRa2pdrfbz45Py2xPcNBYGrxQ7dPWe60wyX9mlZw3dNidAsVOU-K973he7itcSHCW7nIxZPM0dyzAYcIOO_GvnsSdQQDhVg9lwdnvyQu2PQMiqss5drCcYJ7&state=XZOd70pXmYHcDkj0Jc21mKcGdKq0pRO2 HTTP/1.1" 500 201139
+2020-04-15 13:13:24,480 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3136
+2020-04-15 13:15:38,431 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3089
+2020-04-15 13:15:39,624 django.request WARNING  Not Found: /favicon.ico
+2020-04-15 13:16:03,208 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3136
+2020-04-15 13:17:34,235 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3130
+2020-04-15 13:19:01,543 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3093
+2020-04-15 13:19:45,040 django.server INFO     "GET /social/login/spotify/ HTTP/1.1" 302 0
+2020-04-15 13:19:45,659 django.server INFO     "GET /social/complete/spotify/?code=AQBZAttHr6AgP5U7pdKiYE4BJ2cej2fgCAfiRtFLWJVAn5R3PXU53KpepYIntZCxnu17XViXbW9UxpUSRe-hyLJnPChII95x3VT60OKjDwkYcIGYcyP0RDSnK02PcIllrOccODOhn-TmNlrkMtYT692CSSRk_t6KwhHJLTxiCZPsVtXcBB52NI37GX92D6dvDTmeaUoXOtFyLSaguFM2fFB_iNrG9GIXw0-OWs1EsFP3DVLPLVrQNKDPD6ygBfcB1sgWW-LqaA6NsZd1i1UKilZQp4iUmlp828gyKRPoUnpz_qeWTcmrZkoEPkdvQfWlgB2nZ7YF_d7XIP67ErNvuzuVbEjQPpfB1ZMyqmnWjcGcuBWd5IB2UXtzi-uXuK_UTFHcpcNR65JWvIRWKhRcdQWsrlydicDO-qWzELyyFn1jKmLZxKXcayPyNFAJBkMrc366h7PUva66e3UJXsWdZjAXFo94PLkUveCcGGMAK5aL0Pmc7pSfvliSTZsE_H2cW1JgxIVRjKLv0gm1y1x6Kmf02riSTsEdREFvY6TZtx2nbZMJkAyTYjzumy8zox3_ybGIv-8rIjNX-M3P7JrUvh8vx9yqdZn9n_sQe6q5vs-UPPOx0QoiASlly4Ga7qWoYn93hCssF49imV3SSxclpc0tRtXaab2qs0c9b1_vve7bXSQmRCPcGNa6z7c6zBr3-u687dEV&state=f0q5l9jM1aEXBPZW6yqMyvXHnHGb1ycS HTTP/1.1" 302 0
+2020-04-15 13:19:45,693 django.server INFO     "GET / HTTP/1.1" 200 1005
+2020-04-15 13:20:43,242 django.server INFO     "GET / HTTP/1.1" 302 0
+2020-04-15 13:20:43,293 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3125
+2020-04-15 13:20:43,475 django.server INFO     "GET /static/manager/css/semantic.css HTTP/1.1" 200 1633056
+2020-04-15 13:20:43,518 django.server INFO     "GET /static/manager/js/semantic.js HTTP/1.1" 200 970784
+2020-04-15 13:20:43,899 django.server INFO     "GET /static/manager/css/themes/default/assets/fonts/icons.woff2 HTTP/1.1" 200 40148
+2020-04-15 13:20:43,901 django.server INFO     "GET /static/manager/css/themes/default/assets/fonts/brand-icons.woff2 HTTP/1.1" 200 54488
+2020-04-15 13:20:44,094 django.request WARNING  Not Found: /favicon.ico
+2020-04-15 13:20:44,095 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2619
+2020-04-15 13:20:45,338 django.server INFO     "GET /social/login/spotify/ HTTP/1.1" 302 0
+2020-04-15 13:21:07,614 django.server INFO     "GET /social/complete/spotify/?code=AQCtffinU11UfiM3dvbUhyFzhzSgAxFtgpvk9-uz0iu2g2laQNW2fCF1xhvc0C41-X69n7lPQihoDRiu6TmgFAzRn79BuZF42Lm4JN-alYkuFn62XXhgo6WOktEdWjcqNFAoajVgnsopzNcyodMco_qH6QHfSLkFH6tdAdPaXbcR6xQ1BYVoEboBfIPQ3rv0pN913RHa_3TQu7G5uqVUAdiSYypOp35wYSLSKdefTrNZCYrLOAAWYI31HCKo6jtKFEDIulim-H5a4tC3VrU6xsXmxdQzJUwPd_t8vP9PNkJIEOuE7B94yvbHn-alILn312xO3PSyhd9HkhbhRvYOAf8V-PTp6uCKAquqgM5PcrIXfXcd8qRPMSWXdoD0D0G4V3XQqVzaJBLWI66xkej7IsZiynrmURhqP8au6GeBoat7UvE48x0mhnovSxDlKp2zMCJeVrCixHoKVPv15xrxwj66RYAsFeGAc-H9isWpLn9TlBBeyMli9gvCZMzjTtA7aCJEtEw77Dce-ogkyqL_Imh3yKgn4do86CMbEJhn_0uLZwYo10dqjmwmZPkxem3UVo8Z9bow2YoHO7yYiRMxJNHUEAPCqHA3kla0fiEo0x2mvH5c9JCDJQsPVMaLi2smkeqRgWuibKDstFdtaq6849VQPI6Y9MwROWVIql67CHu6c_5BKYe93Kma-II-seVI5JZioKqo&state=rknZVrGU6BGr7pbxMIbXpQRYDoiYOujC HTTP/1.1" 302 0
+2020-04-15 13:21:07,636 django.server INFO     "GET / HTTP/1.1" 200 1005
+2020-04-15 13:21:29,726 django.server INFO     "GET / HTTP/1.1" 200 1005
+2020-04-15 13:21:39,682 django.server INFO     "GET / HTTP/1.1" 302 0
+2020-04-15 13:21:39,710 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3125
+2020-04-15 13:21:40,041 django.server INFO     "GET /static/manager/css/semantic.css HTTP/1.1" 304 0
+2020-04-15 13:21:40,046 django.server INFO     "GET /static/manager/js/semantic.js HTTP/1.1" 304 0
+2020-04-15 13:21:40,745 django.server INFO     "GET /static/manager/css/themes/default/assets/fonts/brand-icons.woff2 HTTP/1.1" 200 54488
+2020-04-15 13:21:40,745 django.server INFO     "GET /static/manager/css/themes/default/assets/fonts/icons.woff2 HTTP/1.1" 200 40148
+2020-04-15 13:26:58,813 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\urls.py changed, reloading.
+2020-04-15 13:27:00,818 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:27:18,974 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 13:27:20,357 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:28:43,114 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 13:28:44,705 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:30:03,369 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\forms.py changed, reloading.
+2020-04-15 13:30:05,705 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:31:43,043 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3139
+2020-04-15 13:31:44,259 django.server INFO     "GET /register/ HTTP/1.1" 200 1746
+2020-04-15 13:32:17,337 django.server INFO     "GET /register/ HTTP/1.1" 200 2259
+2020-04-15 13:32:56,275 django.server INFO     "GET /register/ HTTP/1.1" 200 1977
+2020-04-15 13:32:56,337 django.server INFO     "GET /static/manager/css/semantic.css HTTP/1.1" 304 0
+2020-04-15 13:32:56,345 django.server INFO     "GET /static/manager/js/semantic.js HTTP/1.1" 304 0
+2020-04-15 13:33:25,231 django.server INFO     "GET /register/ HTTP/1.1" 200 2611
+2020-04-15 13:33:25,354 django.server INFO     "GET /static/manager/css/semantic.css HTTP/1.1" 304 0
+2020-04-15 13:33:25,356 django.server INFO     "GET /static/manager/js/semantic.js HTTP/1.1" 304 0
+2020-04-15 13:34:35,522 django.server INFO     "GET /register/ HTTP/1.1" 200 2683
+2020-04-15 13:34:44,449 django.server INFO     "GET /register/ HTTP/1.1" 200 2685
+2020-04-15 13:35:16,777 django.server INFO     "GET /register/ HTTP/1.1" 200 2950
+2020-04-15 13:37:23,034 django.server INFO     "GET /register/ HTTP/1.1" 200 2964
+2020-04-15 13:37:45,842 django.server INFO     "GET /register/ HTTP/1.1" 200 2984
+2020-04-15 13:38:56,704 django.server INFO     "GET /register/ HTTP/1.1" 200 3017
+2020-04-15 13:40:52,396 django.server INFO     "GET /register/ HTTP/1.1" 200 2984
+2020-04-15 13:41:27,208 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\forms.py changed, reloading.
+2020-04-15 13:41:30,278 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:42:31,949 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\forms.py changed, reloading.
+2020-04-15 13:42:33,786 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:47:44,086 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 13:47:46,670 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:53:39,241 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 13:53:40,817 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:53:48,447 django.server INFO     "GET /register/ HTTP/1.1" 200 3251
+2020-04-15 13:55:23,746 django.server INFO     "GET /register/ HTTP/1.1" 200 3480
+2020-04-15 13:55:54,432 django.security.csrf WARNING  Forbidden (CSRF token missing or incorrect.): /register/
+2020-04-15 13:55:54,432 django.server WARNING  "POST /register/ HTTP/1.1" 403 2513
+2020-04-15 13:56:08,801 django.server INFO     "GET /register/ HTTP/1.1" 200 3627
+2020-04-15 13:56:25,090 django.request ERROR    Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py", line 38, in default_register
+    form = NewRegisterForm(request=request, data=request.POST)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\contrib\auth\forms.py", line 108, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'request'
+2020-04-15 13:56:25,091 django.server ERROR    "POST /register/ HTTP/1.1" 500 84197
+2020-04-15 13:59:10,482 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\forms.py changed, reloading.
+2020-04-15 13:59:11,896 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 13:59:38,261 django.server INFO     "GET /register/ HTTP/1.1" 200 3627
+2020-04-15 13:59:53,357 django.request ERROR    Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py", line 38, in default_register
+    form = NewRegisterForm(request=request, data=request.POST)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\contrib\auth\forms.py", line 108, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'request'
+2020-04-15 13:59:53,361 django.server ERROR    "POST /register/ HTTP/1.1" 500 84199
+2020-04-15 14:02:06,474 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 14:02:07,985 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 14:02:38,732 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 14:02:40,622 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 14:02:45,183 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 14:02:46,726 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 14:03:26,171 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 14:03:37,723 django.server INFO     "GET /register/ HTTP/1.1" 200 3627
+2020-04-15 14:04:06,388 django.request ERROR    Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py", line 45, in default_register
+    messages.success("Account has been created")
+TypeError: success() missing 1 required positional argument: 'message'
+2020-04-15 14:04:06,390 django.server ERROR    "POST /register/ HTTP/1.1" 500 79695
+2020-04-15 14:04:39,376 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 14:04:41,006 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 14:04:45,850 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-15 14:04:48,364 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-15 14:04:50,816 django.server INFO     "GET /register/ HTTP/1.1" 200 3627
+2020-04-15 14:05:26,967 django.server INFO     "POST /register/ HTTP/1.1" 302 0
+2020-04-15 14:05:26,995 django.server INFO     "GET / HTTP/1.1" 200 1106
+2020-04-15 14:05:40,874 django.server INFO     "GET / HTTP/1.1" 200 1005

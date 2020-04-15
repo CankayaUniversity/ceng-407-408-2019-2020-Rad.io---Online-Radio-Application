@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
+import posixpath
+load_dotenv(verbose=True)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,14 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '_!qp7nis+d8qn^8m16a&+l9*8su^n$&py^_u)s2-j%a2e&iq29'
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,7 +38,45 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'radio.manager',  # manager app
+    'social_django',  # spotify oauth
+    'rest_framework',  # rest
 ]
+# rest framework
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
+# oauth staff
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.spotify.SpotifyOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+SOCIAL_AUTH_URL_NAMESPACE = 'social'
+SOCIAL_AUTH_SPOTIFY_KEY = os.getenv("SOCIAL_AUTH_SPOTIFY_KEY")  # client id
+SOCIAL_AUTH_SPOTIFY_SECRET = os.getenv("SOCIAL_AUTH_SPOTIFY_SECRET")  # client secret
+SOCIAL_AUTH_SPOTIFY_SCOPE = ["ugc-image-upload", "playlist-read-private", "playlist-modify-public",
+                             "playlist-read-collaborative", "playlist-modify-private", "user-read-currently-playing",
+                             "user-modify-playback-state", "user-read-playback-state", "user-read-recently-played",
+                             "user-top-read", "user-follow-read", "user-follow-modify", "app-remote-control",
+                             "streaming", "user-read-private", "user-read-email", "user-library-modify"
+                             ]
+LOGIN_REDIRECT_URL = '/'
+
+SOCIAL_AUTH_PIPELINE = (
+    'social_core.pipeline.social_auth.social_details',
+    'social_core.pipeline.social_auth.social_uid',
+    'social_core.pipeline.social_auth.auth_allowed',
+    'social_core.pipeline.social_auth.social_user',
+    'social_core.pipeline.social_auth.associate_by_email',
+    'social_core.pipeline.user.create_user',
+    'social_core.pipeline.social_auth.associate_user',
+    'social_core.pipeline.social_auth.load_extra_data',
+    'social_core.pipeline.user.user_details',
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -62,6 +101,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',  # oauth
+                'social_django.context_processors.login_redirect',  # oauth
             ],
         },
     },
@@ -118,3 +159,48 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOG_FILE = posixpath.join(posixpath.join(*(BASE_DIR.split(os.path.sep)), "radio"), "app.log")
+if os.name == "posix":
+    LOG_FILE = os.path.sep + LOG_FILE
+
+if not os.path.isfile(LOG_FILE):
+    open(LOG_FILE, "w").close()
+
+# Logging dict config
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'console': {
+            'format': '%(name)-12s %(levelname)-8s %(message)s'
+        },
+        'file': {
+            'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s'
+        }
+     },
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'console'
+        },
+        'file' : {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'formatter': 'file',
+            'filename': LOG_FILE
+        }
+    },
+    'root': {
+        'handlers': ['console', 'file'],
+        'level': 'INFO',
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+            'propagate': False,
+        },
+    },
+}

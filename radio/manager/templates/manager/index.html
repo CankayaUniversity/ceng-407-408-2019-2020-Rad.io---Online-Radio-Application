@@ -1,0 +1,10 @@
+{% extends "manager/layout.html" %}
+{% block main %}
+<button class="ui secondary button">
+  Okay
+</button>
+<button class="ui button">
+  Cancel
+</button>
+<a href="{% url "social:begin" "spotify" %}">Spotify</a>
+{% endblock %}

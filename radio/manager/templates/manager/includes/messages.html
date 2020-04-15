@@ -1,0 +1,13 @@
+{% if messages %}
+    {% for message in messages %}
+        {% if message.tags == "info" %}
+            <script>toastr.info('{{ message }}')</script>
+        {% elif message.tags == "success" %}
+            <script>toastr.success('{{ message }}')</script>
+        {% elif message.tags == "warning" %}
+            <script>toastr.warning('{{ message }}')</script>
+        {% elif message.tags == "error" %}
+            <script>toastr.error('{{ message }}')</script>
+        {% endif %}
+    {% endfor %}
+{% endif %}
