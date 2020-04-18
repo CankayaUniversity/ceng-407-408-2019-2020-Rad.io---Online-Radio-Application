@@ -46,3 +46,8 @@ def default_register(request):
             return redirect("manager:index")
         messages.error(request, "Form is not valid")
     return render(request, "manager/register.html", {"form": form})
+
+
+def room(request, room_name):
+    return render(request, 'manager/room.html', {'room_name': room_name})
+

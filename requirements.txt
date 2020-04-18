@@ -1,3 +1,4 @@
+channels
 dotenv
 asgiref==3.2.5
 certifi==2019.11.28

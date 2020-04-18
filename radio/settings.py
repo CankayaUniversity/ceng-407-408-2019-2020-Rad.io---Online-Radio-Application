@@ -31,6 +31,18 @@ DEBUG = True
 ALLOWED_HOSTS = []
 # Application definition
 
+
+# Channels
+ASGI_APPLICATION = 'radio.routing.application'
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,6 +53,7 @@ INSTALLED_APPS = [
     'radio.manager',  # manager app
     'social_django',  # spotify oauth
     'rest_framework',  # rest
+    'channels',  # chat
 ]
 # rest framework
 REST_FRAMEWORK = {

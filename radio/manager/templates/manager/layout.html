@@ -4,6 +4,9 @@
     {% include "manager/includes/header.html" %}
 </head>
 <body>
+    {% if user.is_authenticated %}
+        {% include "manager/includes/navbar.html" %}
+    {% endif %}
     {% include "manager/includes/messages.html" %}
     {% block main %}
 

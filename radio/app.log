@@ -315,3 +315,142 @@ TypeError: success() missing 1 required positional argument: 'message'
 2020-04-15 14:05:26,967 django.server INFO     "POST /register/ HTTP/1.1" 302 0
 2020-04-15 14:05:26,995 django.server INFO     "GET / HTTP/1.1" 200 1106
 2020-04-15 14:05:40,874 django.server INFO     "GET / HTTP/1.1" 200 1005
+2020-04-17 18:32:41,592 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-17 18:32:46,403 django.server INFO     "GET / HTTP/1.1" 200 1005
+2020-04-17 18:32:46,415 django.request WARNING  Not Found: /robots.txt
+2020-04-17 18:32:46,418 django.server WARNING  "GET /robots.txt HTTP/1.1" 404 2789
+2020-04-17 18:32:47,510 django.request WARNING  Not Found: /favicon.ico
+2020-04-17 18:47:40,473 django.server INFO     "GET / HTTP/1.1" 200 1179
+2020-04-17 18:47:41,018 django.request WARNING  Not Found: /favicon.ico
+2020-04-18 13:56:28,473 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 17:13:52,121 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 17:14:43,874 django.server INFO     "GET / HTTP/1.1" 200 1035
+2020-04-18 17:14:44,069 django.request WARNING  Not Found: /robots.txt
+2020-04-18 17:14:44,070 django.server WARNING  "GET /robots.txt HTTP/1.1" 404 2789
+2020-04-18 17:14:45,163 django.request WARNING  Not Found: /favicon.ico
+2020-04-18 17:21:16,597 django.server INFO     "GET / HTTP/1.1" 302 0
+2020-04-18 17:21:16,693 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3314
+2020-04-18 17:21:16,828 django.server INFO     "GET /static/manager/css/semantic.css HTTP/1.1" 200 1633056
+2020-04-18 17:21:16,898 django.server INFO     "GET /static/manager/js/semantic.js HTTP/1.1" 200 970784
+2020-04-18 17:21:17,727 django.server INFO     "GET /static/manager/css/themes/default/assets/fonts/icons.woff2 HTTP/1.1" 200 40148
+2020-04-18 17:21:17,737 django.server INFO     "GET /static/manager/css/themes/default/assets/fonts/brand-icons.woff2 HTTP/1.1" 200 54488
+2020-04-18 17:21:18,081 django.request WARNING  Not Found: /favicon.ico
+2020-04-18 17:21:18,082 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2792
+2020-04-18 17:23:25,645 django.server INFO     "GET / HTTP/1.1" 200 1049
+2020-04-18 17:23:26,017 django.request WARNING  Not Found: /favicon.ico
+2020-04-18 17:23:29,657 django.server INFO     "GET /login/?next=/ HTTP/1.1" 200 3145
+2020-04-18 18:11:18,057 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 18:11:39,980 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\settings.py changed, reloading.
+2020-04-18 18:11:42,931 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 18:12:20,811 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\settings.py changed, reloading.
+2020-04-18 18:12:23,746 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 18:12:23,991 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-18 18:12:23,996 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-18 18:12:23,997 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-18 18:12:42,078 django.channels.server INFO     HTTP GET / 200 [0.15, 127.0.0.1:17794]
+2020-04-18 18:12:56,050 django.request WARNING  Not Found: /chat/yo/
+2020-04-18 18:12:56,062 django.channels.server WARNING  HTTP GET /chat/yo/ 404 [0.04, 127.0.0.1:17794]
+2020-04-18 18:17:03,823 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-18 18:17:06,490 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 18:17:06,976 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-18 18:17:06,977 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-18 18:17:06,978 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-18 18:17:44,273 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\urls.py changed, reloading.
+2020-04-18 18:17:47,754 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 18:17:48,400 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-18 18:17:48,401 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-18 18:17:48,403 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-18 18:18:33,029 django.channels.server INFO     HTTP GET / 200 [0.04, 127.0.0.1:17830]
+2020-04-18 18:18:38,050 django.request WARNING  Not Found: /chat/test/
+2020-04-18 18:18:38,062 django.channels.server WARNING  HTTP GET /chat/test/ 404 [0.02, 127.0.0.1:17830]
+2020-04-18 18:21:28,466 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\urls.py changed, reloading.
+2020-04-18 18:21:30,724 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 18:21:31,051 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-18 18:21:31,051 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-18 18:21:31,053 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-18 18:21:31,786 django.channels.server INFO     HTTP GET / 200 [0.04, 127.0.0.1:17852]
+2020-04-18 18:21:34,329 django.request WARNING  Not Found: /chat/tewst/
+2020-04-18 18:21:34,336 django.channels.server WARNING  HTTP GET /chat/tewst/ 404 [0.01, 127.0.0.1:17852]
+2020-04-18 18:21:52,518 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\urls.py changed, reloading.
+2020-04-18 18:21:57,382 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 18:21:57,792 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-18 18:21:57,793 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-18 18:21:57,795 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-18 18:21:58,113 django.channels.server INFO     HTTP GET / 200 [0.10, 127.0.0.1:17863]
+2020-04-18 18:22:01,445 django.channels.server INFO     HTTP GET /chat/test/ 200 [0.02, 127.0.0.1:17863]
+2020-04-18 18:22:01,769 daphne.ws_protocol ERROR    [Failure instance: Traceback: <class 'ValueError'>: No application configured for scope type 'websocket'
+C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\autobahn\websocket\protocol.py:2847:processHandshake
+C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\txaio\tx.py:366:as_future
+C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\twisted\internet\defer.py:151:maybeDeferred
+C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\daphne\ws_protocol.py:72:onConnect
+--- <exception caught here> ---
+C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\twisted\internet\defer.py:151:maybeDeferred
+C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\daphne\server.py:200:create_application
+C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\staticfiles.py:41:__call__
+C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\routing.py:56:__call__
+]
+2020-04-18 18:22:06,728 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/test/ [127.0.0.1:17864]
+2020-04-18 18:27:14,252 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\routing.py changed, reloading.
+2020-04-18 18:27:16,881 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 18:27:33,918 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\routing.py changed, reloading.
+2020-04-18 18:27:37,666 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 18:37:14,421 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 18:37:14,727 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-18 18:37:14,728 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-18 18:37:14,729 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-18 18:37:23,140 django.channels.server INFO     HTTP GET / 200 [0.05, 127.0.0.1:17970]
+2020-04-18 18:37:31,443 django.channels.server INFO     HTTP GET /chat/room1/ 200 [0.03, 127.0.0.1:17970]
+2020-04-18 18:37:32,028 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/room1/ [127.0.0.1:17972]
+2020-04-18 18:37:32,043 django.channels.server INFO     WebSocket CONNECT /ws/chat/room1/ [127.0.0.1:17972]
+2020-04-18 18:38:20,151 django.channels.server INFO     HTTP GET /chat/room1/ 200 [0.02, 127.0.0.1:17977]
+2020-04-18 18:38:20,309 django.channels.server INFO     HTTP GET /static/manager/js/semantic.js 200 [0.05, 127.0.0.1:17978]
+2020-04-18 18:38:20,321 django.channels.server INFO     HTTP GET /static/manager/css/semantic.css 200 [0.07, 127.0.0.1:17977]
+2020-04-18 18:38:20,619 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/room1/ [127.0.0.1:17982]
+2020-04-18 18:38:20,623 django.channels.server INFO     WebSocket CONNECT /ws/chat/room1/ [127.0.0.1:17982]
+2020-04-18 18:38:20,750 django.request WARNING  Not Found: /favicon.ico
+2020-04-18 18:38:20,765 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.03, 127.0.0.1:17977]
+2020-04-18 18:38:32,222 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/room1/ [127.0.0.1:17982]
+2020-04-18 18:38:47,297 django.channels.server INFO     HTTP GET / 302 [0.03, 127.0.0.1:17987]
+2020-04-18 18:38:47,359 django.channels.server INFO     HTTP GET /login/?next=/ 200 [0.05, 127.0.0.1:17987]
+2020-04-18 18:38:47,455 django.channels.server INFO     HTTP GET /static/manager/css/semantic.css 200 [0.06, 127.0.0.1:17987]
+2020-04-18 18:38:47,484 django.channels.server INFO     HTTP GET /static/manager/js/semantic.js 200 [0.05, 127.0.0.1:17988]
+2020-04-18 18:38:48,221 django.request WARNING  Not Found: /favicon.ico
+2020-04-18 18:38:48,227 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:17987]
+2020-04-18 18:38:48,275 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/icons.woff2 200 [0.02, 127.0.0.1:17987]
+2020-04-18 18:38:48,296 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/brand-icons.woff2 200 [0.04, 127.0.0.1:17988]
+2020-04-18 20:41:13,590 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\settings.py changed, reloading.
+2020-04-18 20:41:16,070 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 20:41:16,415 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-18 20:41:16,416 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-18 20:41:16,417 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-18 20:42:36,604 asyncio      ERROR    An open stream object is being garbage collected; call "stream.close()" explicitly.
+2020-04-18 20:43:11,017 asyncio      ERROR    An open stream object is being garbage collected; call "stream.close()" explicitly.
+2020-04-18 20:43:18,827 asyncio      ERROR    An open stream object is being garbage collected; call "stream.close()" explicitly.
+2020-04-18 20:46:58,454 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py changed, reloading.
+2020-04-18 20:47:01,606 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 20:47:01,958 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-18 20:47:01,959 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-18 20:47:01,961 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-18 20:50:26,302 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py changed, reloading.
+2020-04-18 20:50:29,318 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 20:50:29,627 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-18 20:50:29,628 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-18 20:50:29,629 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-18 20:52:02,849 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py changed, reloading.
+2020-04-18 20:52:07,677 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-18 20:52:08,179 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-18 20:52:08,180 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-18 20:52:08,182 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-18 21:02:37,261 django.channels.server INFO     HTTP GET / 200 [0.04, 127.0.0.1:18614]
+2020-04-18 21:02:44,086 django.channels.server INFO     HTTP GET /chat/rm1/ 200 [0.02, 127.0.0.1:18614]
+2020-04-18 21:02:44,594 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/rm1/ [127.0.0.1:18615]
+2020-04-18 21:02:44,770 django.channels.server INFO     WebSocket CONNECT /ws/chat/rm1/ [127.0.0.1:18615]
+2020-04-18 21:02:48,496 django.channels.server INFO     HTTP GET /chat/rm1/ 200 [0.03, 127.0.0.1:18619]
+2020-04-18 21:02:48,631 django.channels.server INFO     HTTP GET /static/manager/js/semantic.js 200 [0.04, 127.0.0.1:18620]
+2020-04-18 21:02:48,650 django.channels.server INFO     HTTP GET /static/manager/css/semantic.css 200 [0.06, 127.0.0.1:18619]
+2020-04-18 21:02:49,011 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/rm1/ [127.0.0.1:18624]
+2020-04-18 21:02:49,030 django.channels.server INFO     WebSocket CONNECT /ws/chat/rm1/ [127.0.0.1:18624]
+2020-04-18 21:02:49,154 django.request WARNING  Not Found: /favicon.ico
+2020-04-18 21:02:49,170 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:18619]
+2020-04-18 21:03:00,941 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/rm1/ [127.0.0.1:18624]
+2020-04-18 21:03:03,325 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/rm1/ [127.0.0.1:18615]
