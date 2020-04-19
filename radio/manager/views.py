@@ -7,7 +7,7 @@ from .constants import *
 from django.contrib import messages
 
 
-@login_required(login_url='login/')
+#@login_required(login_url='login/')
 def index(request):
     return render(request, "manager/index.html")
 
@@ -27,7 +27,7 @@ def default_login(request):
                 return redirect("manager:index")
             messages.error(request, "Invalid Username or password")
             return render(request, "manager/login.html", {"message": "Invalid Username or Password"})
-        messages.error(request, "Invalid Username or password")
+        messages.error(request, str(form.errors))
     return render(request, "manager/login.html", {"form": form})
 
 
@@ -44,7 +44,7 @@ def default_register(request):
             login(request, user)
             messages.success(request, "Account has been created")
             return redirect("manager:index")
-        messages.error(request, "Form is not valid")
+        messages.error(request, str(form.errors))
     return render(request, "manager/register.html", {"form": form})
 
 

@@ -1,6 +1,10 @@
 <div class="ui four item menu">
-  <a class="active item">Live Stream</a>
-  <a class="item">Podcast</a>
-  <a class="item">Events</a>
-  <a class="item">Profile</a>
+    <a class="active item">Live Stream</a>
+    <a class="item">Podcast</a>
+    <a class="item">Events</a>
+    {% if user.is_authenticated %}
+        <a class="item">Profile</a>
+    {% else %}
+        <a class="item" href="{% url 'manager:login' %}">Login</a>
+    {% endif %}
 </div>

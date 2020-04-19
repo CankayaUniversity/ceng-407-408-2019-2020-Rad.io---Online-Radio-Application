@@ -454,3 +454,151 @@ C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Onl
 2020-04-18 21:02:49,170 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:18619]
 2020-04-18 21:03:00,941 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/rm1/ [127.0.0.1:18624]
 2020-04-18 21:03:03,325 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/rm1/ [127.0.0.1:18615]
+2020-04-19 19:41:41,869 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-19 19:41:42,590 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-19 19:41:42,591 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-19 19:41:42,593 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-19 19:41:45,697 django.channels.server INFO     HTTP GET / 200 [0.34, 127.0.0.1:41365]
+2020-04-19 19:41:50,570 django.channels.server INFO     HTTP GET /chat/anan/ 200 [0.03, 127.0.0.1:41365]
+2020-04-19 19:41:51,263 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:41370]
+2020-04-19 19:41:51,770 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:41370]
+2020-04-19 19:46:55,639 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-19 19:47:00,783 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-19 19:47:01,666 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-19 19:47:01,666 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-19 19:47:01,668 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-19 19:55:14,658 django.channels.server INFO     HTTP GET /chat/anan/ 200 [0.08, 127.0.0.1:41762]
+2020-04-19 19:55:14,838 django.channels.server INFO     HTTP GET /static/manager/js/reconnecting-websocket.min.js 200 [0.03, 127.0.0.1:41762]
+2020-04-19 19:55:15,919 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:41764]
+2020-04-19 19:55:16,393 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:41764]
+2020-04-19 19:56:30,454 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py changed, reloading.
+2020-04-19 19:56:35,217 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-19 19:58:33,695 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py changed, reloading.
+2020-04-19 19:58:37,689 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-19 19:58:38,645 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-19 19:58:38,646 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-19 19:58:38,647 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-19 19:58:38,735 django.channels.server INFO     HTTP GET /chat/anan/ 200 [0.07, 127.0.0.1:41907]
+2020-04-19 19:58:39,734 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:41911]
+2020-04-19 19:58:39,933 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:41911]
+2020-04-19 19:58:48,509 django.channels.server INFO     HTTP GET /chat/anan/ 200 [0.03, 127.0.0.1:41919]
+2020-04-19 19:58:48,728 django.channels.server INFO     HTTP GET /static/manager/js/reconnecting-websocket.min.js 200 [0.07, 127.0.0.1:41921]
+2020-04-19 19:58:48,729 django.channels.server INFO     HTTP GET /static/manager/js/semantic.js 200 [0.08, 127.0.0.1:41920]
+2020-04-19 19:58:48,739 django.channels.server INFO     HTTP GET /static/manager/css/semantic.css 200 [0.09, 127.0.0.1:41919]
+2020-04-19 19:58:49,451 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:41928]
+2020-04-19 19:58:49,546 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:41928]
+2020-04-19 19:58:49,856 django.request WARNING  Not Found: /favicon.ico
+2020-04-19 19:58:49,865 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.16, 127.0.0.1:41919]
+2020-04-19 19:58:55,157 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/anan/ [127.0.0.1:41928]
+2020-04-19 19:58:55,179 django.request WARNING  Not Found: /loginj
+2020-04-19 19:58:55,182 django.channels.server WARNING  HTTP GET /loginj 404 [0.01, 127.0.0.1:41919]
+2020-04-19 19:58:57,581 django.channels.server INFO     HTTP GET /login 301 [0.00, 127.0.0.1:41919]
+2020-04-19 19:58:57,676 django.channels.server INFO     HTTP GET /login/ 200 [0.08, 127.0.0.1:41919]
+2020-04-19 19:58:58,224 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/icons.woff2 200 [0.01, 127.0.0.1:41919]
+2020-04-19 19:58:58,230 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/brand-icons.woff2 200 [0.01, 127.0.0.1:41920]
+2020-04-19 19:59:00,294 django.channels.server INFO     HTTP GET /register/ 200 [0.04, 127.0.0.1:41919]
+2020-04-19 19:59:15,665 django.channels.server INFO     HTTP POST /register/ 200 [0.11, 127.0.0.1:41919]
+2020-04-19 19:59:32,302 django.channels.server INFO     HTTP POST /register/ 302 [0.92, 127.0.0.1:41919]
+2020-04-19 19:59:32,347 django.channels.server INFO     HTTP GET / 200 [0.03, 127.0.0.1:41919]
+2020-04-19 19:59:39,946 django.channels.server INFO     HTTP GET /chat/anan/ 200 [0.04, 127.0.0.1:41919]
+2020-04-19 19:59:40,784 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:41952]
+2020-04-19 19:59:40,816 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:41952]
+2020-04-19 19:59:57,770 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/anan/ [127.0.0.1:41952]
+2020-04-19 20:00:41,802 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py changed, reloading.
+2020-04-19 20:00:45,867 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-19 20:00:46,382 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-19 20:00:46,383 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-19 20:00:46,384 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-19 20:00:46,434 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:41993]
+2020-04-19 20:00:46,561 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:41991]
+2020-04-19 20:00:46,595 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:41993]
+2020-04-19 20:00:46,605 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/anan/ [127.0.0.1:41993]
+2020-04-19 20:00:46,619 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:41991]
+2020-04-19 20:00:46,692 django.channels.server INFO     HTTP GET /chat/anan/ 200 [0.13, 127.0.0.1:41994]
+2020-04-19 20:00:46,726 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/anan/ [127.0.0.1:41991]
+2020-04-19 20:00:47,327 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42001]
+2020-04-19 20:00:47,375 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42001]
+2020-04-19 20:01:02,325 django.channels.server INFO     HTTP GET /chat/anan/ 200 [0.02, 127.0.0.1:42012]
+2020-04-19 20:01:02,487 django.channels.server INFO     HTTP GET /static/manager/js/reconnecting-websocket.min.js 200 [0.07, 127.0.0.1:42014]
+2020-04-19 20:01:02,488 django.channels.server INFO     HTTP GET /static/manager/css/semantic.css 200 [0.08, 127.0.0.1:42012]
+2020-04-19 20:01:02,490 django.channels.server INFO     HTTP GET /static/manager/js/semantic.js 200 [0.08, 127.0.0.1:42013]
+2020-04-19 20:01:02,989 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42018]
+2020-04-19 20:01:03,014 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42018]
+2020-04-19 20:01:03,161 django.request WARNING  Not Found: /favicon.ico
+2020-04-19 20:01:03,166 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.03, 127.0.0.1:42012]
+2020-04-19 20:01:08,998 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/anan/ [127.0.0.1:42018]
+2020-04-19 20:01:09,059 django.channels.server INFO     HTTP GET /login 301 [0.00, 127.0.0.1:42012]
+2020-04-19 20:01:09,151 django.channels.server INFO     HTTP GET /login/ 200 [0.07, 127.0.0.1:42012]
+2020-04-19 20:01:09,713 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/icons.woff2 200 [0.01, 127.0.0.1:42012]
+2020-04-19 20:01:09,716 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/brand-icons.woff2 200 [0.01, 127.0.0.1:42013]
+2020-04-19 20:01:18,723 root         INFO     Login successful
+2020-04-19 20:01:18,738 django.channels.server INFO     HTTP POST /login/ 302 [1.08, 127.0.0.1:42012]
+2020-04-19 20:01:18,797 django.channels.server INFO     HTTP GET / 200 [0.03, 127.0.0.1:42012]
+2020-04-19 20:01:23,581 django.channels.server INFO     HTTP GET /chat/anan/ 200 [0.03, 127.0.0.1:42012]
+2020-04-19 20:01:24,318 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42030]
+2020-04-19 20:01:24,335 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42030]
+2020-04-19 20:04:36,227 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-19 20:04:43,051 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-19 20:04:44,323 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-19 20:04:44,325 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-19 20:04:44,328 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-19 20:04:44,344 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42151]
+2020-04-19 20:04:44,377 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42139]
+2020-04-19 20:04:44,668 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42151]
+2020-04-19 20:04:44,693 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/anan/ [127.0.0.1:42151]
+2020-04-19 20:04:44,697 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42139]
+2020-04-19 20:04:44,702 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/anan/ [127.0.0.1:42139]
+2020-04-19 20:04:44,737 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42153]
+2020-04-19 20:04:44,828 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42153]
+2020-04-19 20:04:44,835 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/anan/ [127.0.0.1:42153]
+2020-04-19 20:04:45,777 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42157]
+2020-04-19 20:04:45,813 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42157]
+2020-04-19 20:04:45,829 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42159]
+2020-04-19 20:04:45,851 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42159]
+2020-04-19 20:05:23,805 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-19 20:05:27,041 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-19 20:05:27,726 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-19 20:05:27,726 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-19 20:05:27,728 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-19 20:05:27,853 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42192]
+2020-04-19 20:05:27,860 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42193]
+2020-04-19 20:05:28,021 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42193]
+2020-04-19 20:05:28,022 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42192]
+2020-04-19 20:05:28,039 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/anan/ [127.0.0.1:42193]
+2020-04-19 20:05:28,041 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/anan/ [127.0.0.1:42192]
+2020-04-19 20:05:28,585 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42197]
+2020-04-19 20:05:28,706 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42197]
+2020-04-19 20:05:29,100 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42198]
+2020-04-19 20:05:29,132 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42198]
+2020-04-19 20:05:31,935 django.channels.server INFO     HTTP GET / 200 [0.12, 127.0.0.1:42190]
+2020-04-19 20:05:55,414 django.channels.server INFO     HTTP GET / 200 [0.03, 127.0.0.1:42190]
+2020-04-19 20:05:59,539 django.channels.server INFO     HTTP GET /login/ 200 [0.08, 127.0.0.1:42190]
+2020-04-19 20:06:01,877 django.channels.server INFO     HTTP GET /register/ 200 [0.03, 127.0.0.1:42190]
+2020-04-19 20:06:15,161 django.channels.server INFO     HTTP POST /register/ 200 [0.10, 127.0.0.1:42190]
+2020-04-19 20:06:46,951 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-19 20:06:52,123 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-19 20:06:52,674 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-19 20:06:52,675 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-19 20:06:52,676 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-19 20:06:52,789 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42310]
+2020-04-19 20:06:52,891 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42310]
+2020-04-19 20:06:52,917 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42314]
+2020-04-19 20:06:52,926 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42314]
+2020-04-19 20:07:19,074 django.channels.server INFO     HTTP GET /register/ 200 [0.17, 127.0.0.1:42326]
+2020-04-19 20:07:57,737 django.channels.server INFO     HTTP GET /register/ 200 [0.03, 127.0.0.1:42326]
+2020-04-19 20:07:59,598 django.channels.server INFO     HTTP GET /login/ 200 [0.03, 127.0.0.1:42326]
+2020-04-19 20:08:48,054 django.channels.server INFO     HTTP GET /login/ 200 [0.02, 127.0.0.1:42326]
+2020-04-19 20:08:52,599 django.channels.server INFO     HTTP POST /login/ 200 [0.59, 127.0.0.1:42326]
+2020-04-19 20:09:08,472 django.channels.server INFO     HTTP GET /login/ 200 [0.03, 127.0.0.1:42326]
+2020-04-19 20:09:12,525 django.channels.server INFO     HTTP GET /login/ 200 [0.03, 127.0.0.1:42326]
+2020-04-19 20:09:27,772 django.channels.server INFO     HTTP GET / 200 [0.02, 127.0.0.1:42326]
+2020-04-19 20:09:42,800 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/anan/ [127.0.0.1:42314]
+2020-04-19 20:10:42,963 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/anan/ [127.0.0.1:42310]
+2020-04-19 20:10:43,030 django.channels.server INFO     HTTP GET /chat/anan/ 200 [0.03, 127.0.0.1:42426]
+2020-04-19 20:10:43,153 django.channels.server INFO     HTTP GET /static/manager/js/reconnecting-websocket.min.js 304 [0.01, 127.0.0.1:42426]
+2020-04-19 20:10:43,614 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42427]
+2020-04-19 20:10:43,660 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42427]
+2020-04-19 20:10:48,783 django.channels.server INFO     WebSocket DISCONNECT /ws/chat/anan/ [127.0.0.1:42427]
+2020-04-19 20:10:48,940 django.channels.server INFO     HTTP GET /chat/anan/ 200 [0.12, 127.0.0.1:42426]
+2020-04-19 20:10:49,930 django.channels.server INFO     WebSocket HANDSHAKING /ws/chat/anan/ [127.0.0.1:42431]
+2020-04-19 20:10:50,007 django.channels.server INFO     WebSocket CONNECT /ws/chat/anan/ [127.0.0.1:42431]
