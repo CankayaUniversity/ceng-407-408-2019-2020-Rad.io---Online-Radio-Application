@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "572070560281",
+    "firebase_url": "https://tomb-radio-app.firebaseio.com",
+    "project_id": "tomb-radio-app",
+    "storage_bucket": "tomb-radio-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572070560281:android:e3f623bc76326c64ade088",
+        "android_client_info": {
+          "package_name": "com.tomb.tombradioapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572070560281-9djuepqq5gdpjn4ota37pmk115v3t6pj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvIHVFqp2JWZdRV1w5cmTQltA-FRxAIbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572070560281-9djuepqq5gdpjn4ota37pmk115v3t6pj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
