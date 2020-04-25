@@ -1,20 +1,33 @@
 {% extends "manager/layout.html" %}
 {% block main %}
     {% load static %}
-
+    <div class="ui right aligned container">
+        <div class="ui comments">
+            <h3 class="ui dividing header">Chat</h3>
+            <div id="node">
+            </div>
+            <div class="ui reply form">
+                <div class="field">
+                    <input id="chat-message-input" type="text" size="100"><br>
+                </div>
+                <input id="chat-message-submit" type="button" value="Send">
+            </div>
+        </div>
+    </div>
+    <!--
     <textarea id="chat-log" cols="100" rows="20"></textarea><br>
     <input id="chat-message-input" type="text" size="100"><br>
     <input id="chat-message-submit" type="button" value="Send">
+    -->
     {{ room_name|json_script:"room-name" }}
     <script src="{% static 'manager/js/reconnecting-websocket.min.js' %}" type="text/javascript"></script>
     <script>
-        const roomName = JSON.parse(document.getElementById('room-name').textContent);
 
         const chatSocket = new ReconnectingWebSocket(
             'ws://'
             + window.location.host
-            + '/ws/chat/'
-            + roomName
+            + '/ws/live/'
+            + 'main'
             + '/'
         );
 
@@ -22,8 +35,25 @@
             // incoming message
 
             const data = JSON.parse(e.data);
-            document.querySelector('#chat-log').value += (data.username + ': ' + data.message + '\n');
-        };
+            document.getElementById('node').innerHTML += '' +
+                '<div class="comment">\n' +
+                '                <a class="avatar">\n' +
+                '                    <i class="user icon"></i>\n' +
+                '                </a>\n' +
+                '                <div class="content">\n' +
+                '                    <a class="author">' + data.username + '</a>\n' +
+                '\n' +
+                '                    <div class="text">\n' +
+                '                        ' + data.message + '\n' +
+                '                    </div>\n' +
+                '                </div>\n' +
+                '            </div>' +
+                ''
+
+        //document.getElementById('chat-author').innerHTML += (data.username);
+        //document.getElementById('chat-log').innerText += (data.message + '\n');
+        }
+        ;
 
         chatSocket.onclose = function (e) {
             console.error('Chat socket closed unexpectedly');

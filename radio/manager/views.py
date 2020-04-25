@@ -6,7 +6,6 @@ from django.contrib.auth.decorators import login_required
 from .constants import *
 from django.contrib import messages
 
-
 #@login_required(login_url='login/')
 def index(request):
     return render(request, "manager/index.html")
@@ -48,6 +47,23 @@ def default_register(request):
     return render(request, "manager/register.html", {"form": form})
 
 
-def room(request, room_name):
+def room(request):
+    room_name = 'main'
     return render(request, 'manager/room.html', {'room_name': room_name})
 
+
+def podcast(request):
+    return render(request, 'manager/podcast.html')
+
+
+def events(request):
+    return render(request, 'manager/events.html')
+
+
+def profile(request):
+    return render(request, 'manager/profile.html')
+
+
+def default_logout(request):
+    logout(request)
+    return render(request, 'manager/index.html')
