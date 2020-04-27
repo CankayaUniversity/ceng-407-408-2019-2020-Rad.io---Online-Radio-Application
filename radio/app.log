@@ -30308,3 +30308,1035 @@ ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
 2020-04-27 03:09:29,875 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/icons.woff2 200 [0.02, 127.0.0.1:2432]
 2020-04-27 03:09:30,115 django.request WARNING  Not Found: /favicon.ico
 2020-04-27 03:09:30,119 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:2432]
+2020-04-27 11:17:52,362 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-27 11:17:52,784 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-27 11:17:52,785 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-27 11:17:52,785 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-27 11:29:58,127 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-27 11:29:58,471 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-27 11:29:58,472 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-27 11:29:58,474 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-27 12:04:02,138 django.channels.server INFO     HTTP GET / 200 [0.37, 127.0.0.1:2325]
+2020-04-27 12:04:02,974 django.channels.server INFO     WebSocket HANDSHAKING /ws/live/main/ [127.0.0.1:2330]
+2020-04-27 12:04:06,066 django.channels.server INFO     WebSocket HANDSHAKING /ws/live/main/ [127.0.0.1:2335]
+2020-04-27 12:04:06,700 daphne.server ERROR    Exception inside application: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 266, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 311, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 105, in dispatch
+    handler(message)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\generic\websocket.py", line 39, in websocket_connect
+    self.connect()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py", line 12, in connect
+    async_to_sync(self.channel_layer.group_add)(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 120, in __call__
+    return call_result.result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 432, in result
+    return self.__get_result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 388, in __get_result
+    raise self._exception
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 177, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 589, in group_add
+    async with self.connection(self.consistent_hash(group)) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+2020-04-27 12:04:06,795 django.channels.server INFO     WebSocket DISCONNECT /ws/live/main/ [127.0.0.1:2330]
+2020-04-27 12:04:08,816 daphne.server ERROR    Exception inside application: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 266, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 311, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 105, in dispatch
+    handler(message)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\generic\websocket.py", line 39, in websocket_connect
+    self.connect()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py", line 12, in connect
+    async_to_sync(self.channel_layer.group_add)(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 120, in __call__
+    return call_result.result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 432, in result
+    return self.__get_result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 388, in __get_result
+    raise self._exception
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 177, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 589, in group_add
+    async with self.connection(self.consistent_hash(group)) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 58, in await_many_dispatch
+    await task
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 434, in receive
+    message_channel, message = await self.receive_single(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 489, in receive_single
+    content = await self._brpop_with_clean(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 330, in _brpop_with_clean
+    async with self.connection(index) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+2020-04-27 12:04:08,833 django.channels.server INFO     WebSocket DISCONNECT /ws/live/main/ [127.0.0.1:2335]
+2020-04-27 12:04:09,585 django.channels.server INFO     WebSocket HANDSHAKING /ws/live/main/ [127.0.0.1:2338]
+2020-04-27 12:04:11,863 daphne.server ERROR    Exception inside application: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 266, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 311, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 105, in dispatch
+    handler(message)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\generic\websocket.py", line 39, in websocket_connect
+    self.connect()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py", line 12, in connect
+    async_to_sync(self.channel_layer.group_add)(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 120, in __call__
+    return call_result.result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 432, in result
+    return self.__get_result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 388, in __get_result
+    raise self._exception
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 177, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 589, in group_add
+    async with self.connection(self.consistent_hash(group)) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 58, in await_many_dispatch
+    await task
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 434, in receive
+    message_channel, message = await self.receive_single(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 489, in receive_single
+    content = await self._brpop_with_clean(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 330, in _brpop_with_clean
+    async with self.connection(index) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+2020-04-27 12:04:11,882 django.channels.server INFO     WebSocket DISCONNECT /ws/live/main/ [127.0.0.1:2338]
+2020-04-27 12:04:13,857 django.channels.server INFO     WebSocket HANDSHAKING /ws/live/main/ [127.0.0.1:2341]
+2020-04-27 12:04:16,889 daphne.server ERROR    Exception inside application: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 266, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 311, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 105, in dispatch
+    handler(message)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\generic\websocket.py", line 39, in websocket_connect
+    self.connect()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py", line 12, in connect
+    async_to_sync(self.channel_layer.group_add)(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 120, in __call__
+    return call_result.result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 432, in result
+    return self.__get_result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 388, in __get_result
+    raise self._exception
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 177, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 589, in group_add
+    async with self.connection(self.consistent_hash(group)) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 58, in await_many_dispatch
+    await task
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 434, in receive
+    message_channel, message = await self.receive_single(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 489, in receive_single
+    content = await self._brpop_with_clean(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 330, in _brpop_with_clean
+    async with self.connection(index) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+2020-04-27 12:04:16,907 django.channels.server INFO     WebSocket DISCONNECT /ws/live/main/ [127.0.0.1:2341]
+2020-04-27 12:04:19,243 django.channels.server INFO     WebSocket HANDSHAKING /ws/live/main/ [127.0.0.1:2346]
+2020-04-27 12:04:21,957 daphne.server ERROR    Exception inside application: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 266, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 311, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 105, in dispatch
+    handler(message)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\generic\websocket.py", line 39, in websocket_connect
+    self.connect()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py", line 12, in connect
+    async_to_sync(self.channel_layer.group_add)(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 120, in __call__
+    return call_result.result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 432, in result
+    return self.__get_result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 388, in __get_result
+    raise self._exception
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 177, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 589, in group_add
+    async with self.connection(self.consistent_hash(group)) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 58, in await_many_dispatch
+    await task
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 434, in receive
+    message_channel, message = await self.receive_single(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 489, in receive_single
+    content = await self._brpop_with_clean(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 330, in _brpop_with_clean
+    async with self.connection(index) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+2020-04-27 12:04:21,974 django.channels.server INFO     WebSocket DISCONNECT /ws/live/main/ [127.0.0.1:2346]
+2020-04-27 12:04:26,338 django.channels.server INFO     WebSocket HANDSHAKING /ws/live/main/ [127.0.0.1:2351]
+2020-04-27 12:04:29,017 daphne.server ERROR    Exception inside application: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 266, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 311, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 105, in dispatch
+    handler(message)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\generic\websocket.py", line 39, in websocket_connect
+    self.connect()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py", line 12, in connect
+    async_to_sync(self.channel_layer.group_add)(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 120, in __call__
+    return call_result.result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 432, in result
+    return self.__get_result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 388, in __get_result
+    raise self._exception
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 177, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 589, in group_add
+    async with self.connection(self.consistent_hash(group)) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 58, in await_many_dispatch
+    await task
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 434, in receive
+    message_channel, message = await self.receive_single(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 489, in receive_single
+    content = await self._brpop_with_clean(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 330, in _brpop_with_clean
+    async with self.connection(index) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+2020-04-27 12:04:29,471 django.channels.server INFO     WebSocket DISCONNECT /ws/live/main/ [127.0.0.1:2351]
+2020-04-27 12:04:35,933 django.channels.server INFO     WebSocket HANDSHAKING /ws/live/main/ [127.0.0.1:2359]
+2020-04-27 12:04:38,512 daphne.server ERROR    Exception inside application: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 266, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 311, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 105, in dispatch
+    handler(message)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\generic\websocket.py", line 39, in websocket_connect
+    self.connect()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py", line 12, in connect
+    async_to_sync(self.channel_layer.group_add)(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 120, in __call__
+    return call_result.result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 432, in result
+    return self.__get_result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 388, in __get_result
+    raise self._exception
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 177, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 589, in group_add
+    async with self.connection(self.consistent_hash(group)) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 58, in await_many_dispatch
+    await task
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 434, in receive
+    message_channel, message = await self.receive_single(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 489, in receive_single
+    content = await self._brpop_with_clean(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 330, in _brpop_with_clean
+    async with self.connection(index) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+2020-04-27 12:04:38,531 django.channels.server INFO     WebSocket DISCONNECT /ws/live/main/ [127.0.0.1:2359]
+2020-04-27 12:04:49,336 django.channels.server INFO     WebSocket HANDSHAKING /ws/live/main/ [127.0.0.1:2364]
+2020-04-27 12:04:51,619 daphne.server ERROR    Exception inside application: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 266, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 311, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 105, in dispatch
+    handler(message)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\generic\websocket.py", line 39, in websocket_connect
+    self.connect()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py", line 12, in connect
+    async_to_sync(self.channel_layer.group_add)(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 120, in __call__
+    return call_result.result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 432, in result
+    return self.__get_result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 388, in __get_result
+    raise self._exception
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 177, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 589, in group_add
+    async with self.connection(self.consistent_hash(group)) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 58, in await_many_dispatch
+    await task
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 434, in receive
+    message_channel, message = await self.receive_single(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 489, in receive_single
+    content = await self._brpop_with_clean(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 330, in _brpop_with_clean
+    async with self.connection(index) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+2020-04-27 12:04:51,637 django.channels.server INFO     WebSocket DISCONNECT /ws/live/main/ [127.0.0.1:2364]
+2020-04-27 12:05:08,443 django.channels.server INFO     WebSocket HANDSHAKING /ws/live/main/ [127.0.0.1:2375]
+2020-04-27 12:05:10,843 daphne.server ERROR    Exception inside application: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 266, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 311, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 105, in dispatch
+    handler(message)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\generic\websocket.py", line 39, in websocket_connect
+    self.connect()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py", line 12, in connect
+    async_to_sync(self.channel_layer.group_add)(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 120, in __call__
+    return call_result.result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 432, in result
+    return self.__get_result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 388, in __get_result
+    raise self._exception
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 177, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 589, in group_add
+    async with self.connection(self.consistent_hash(group)) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 58, in await_many_dispatch
+    await task
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 434, in receive
+    message_channel, message = await self.receive_single(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 489, in receive_single
+    content = await self._brpop_with_clean(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 330, in _brpop_with_clean
+    async with self.connection(index) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+2020-04-27 12:05:10,860 django.channels.server INFO     WebSocket DISCONNECT /ws/live/main/ [127.0.0.1:2375]
+2020-04-27 12:05:36,104 django.channels.server INFO     WebSocket HANDSHAKING /ws/live/main/ [127.0.0.1:2382]
+2020-04-27 12:05:38,250 daphne.server ERROR    Exception inside application: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 51, in await_many_dispatch
+    await dispatch(result)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 266, in __call__
+    ret = await asyncio.wait_for(future, timeout=None)
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Program Files\Python38\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\db.py", line 14, in thread_handler
+    return super().thread_handler(loop, *args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 311, in thread_handler
+    return func(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 105, in dispatch
+    handler(message)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\generic\websocket.py", line 39, in websocket_connect
+    self.connect()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\consumers.py", line 12, in connect
+    async_to_sync(self.channel_layer.group_add)(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 120, in __call__
+    return call_result.result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 432, in result
+    return self.__get_result()
+  File "C:\Program Files\Python38\lib\concurrent\futures\_base.py", line 388, in __get_result
+    raise self._exception
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\asgiref\sync.py", line 177, in main_wrap
+    result = await self.awaitable(*args, **kwargs)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 589, in group_add
+    async with self.connection(self.consistent_hash(group)) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\sessions.py", line 183, in __call__
+    return await self.inner(receive, self.send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\middleware.py", line 41, in coroutine_call
+    await inner_instance(receive, send)
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels\utils.py", line 58, in await_many_dispatch
+    await task
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 434, in receive
+    message_channel, message = await self.receive_single(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 489, in receive_single
+    content = await self._brpop_with_clean(
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 330, in _brpop_with_clean
+    async with self.connection(index) as connection:
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 835, in __aenter__
+    self.conn = await self.pool.pop()
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\channels_redis\core.py", line 73, in pop
+    conns.append(await aioredis.create_redis(**self.host, loop=loop))
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\commands\__init__.py", line 168, in create_redis
+    conn = await create_connection(address, db=db,
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\connection.py", line 111, in create_connection
+    reader, writer = await asyncio.wait_for(open_connection(
+  File "C:\Program Files\Python38\lib\asyncio\tasks.py", line 455, in wait_for
+    return await fut
+  File "C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\venv\lib\site-packages\aioredis\stream.py", line 23, in open_connection
+    transport, _ = await get_event_loop().create_connection(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1017, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 1002, in create_connection
+    sock = await self._connect_sock(
+  File "C:\Program Files\Python38\lib\asyncio\base_events.py", line 916, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 485, in sock_connect
+    return await fut
+  File "C:\Program Files\Python38\lib\asyncio\selector_events.py", line 517, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 10061] Connect call failed ('127.0.0.1', 6379)
+2020-04-27 12:05:38,267 django.channels.server INFO     WebSocket DISCONNECT /ws/live/main/ [127.0.0.1:2382]
+2020-04-27 12:05:45,939 django.channels.server INFO     HTTP GET /profile/ 200 [0.07, 127.0.0.1:2385]
+2020-04-27 12:05:46,359 django.request WARNING  Not Found: /favicon.ico
+2020-04-27 12:07:54,671 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\forms.py changed, reloading.
+2020-04-27 12:07:59,443 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-27 12:07:59,803 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-27 12:07:59,804 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-27 12:07:59,805 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-27 12:08:02,182 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\forms.py changed, reloading.
+2020-04-27 12:08:06,051 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-27 12:08:06,435 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-27 12:08:06,435 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-27 12:08:06,437 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-27 12:08:17,526 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\forms.py changed, reloading.
+2020-04-27 12:08:20,568 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-27 12:08:21,323 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-27 12:08:21,323 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-27 12:08:21,325 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-27 12:09:08,537 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-27 12:09:10,993 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-27 12:09:11,368 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-27 12:09:11,368 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-27 12:09:11,370 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-27 12:16:44,969 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-27 12:16:48,354 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-27 12:16:48,855 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-27 12:16:48,856 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-27 12:16:48,857 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-27 12:19:02,753 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-27 12:19:05,780 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-27 12:19:06,485 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-27 12:19:06,485 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-27 12:19:06,487 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-27 12:19:22,741 django.channels.server INFO     HTTP GET /profile/ 200 [0.05, 127.0.0.1:2478]
+2020-04-27 12:19:22,853 django.channels.server INFO     HTTP GET /static/manager/js/semantic.js 200 [0.06, 127.0.0.1:2479]
+2020-04-27 12:19:22,867 django.channels.server INFO     HTTP GET /static/manager/css/semantic.css 200 [0.08, 127.0.0.1:2478]
+2020-04-27 12:19:23,428 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/icons.woff2 200 [0.03, 127.0.0.1:2478]
+2020-04-27 12:19:23,638 django.request WARNING  Not Found: /favicon.ico
+2020-04-27 12:19:23,640 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.03, 127.0.0.1:2478]
+2020-04-27 12:19:50,931 django.channels.server INFO     HTTP GET /profile/ 200 [0.04, 127.0.0.1:2489]
+2020-04-27 12:19:51,019 django.channels.server INFO     HTTP GET /static/manager/js/semantic.js 200 [0.04, 127.0.0.1:2490]
+2020-04-27 12:19:51,022 django.channels.server INFO     HTTP GET /static/manager/css/semantic.css 200 [0.04, 127.0.0.1:2489]
+2020-04-27 12:19:51,436 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/icons.woff2 200 [0.03, 127.0.0.1:2489]
+2020-04-27 12:19:51,589 django.request WARNING  Not Found: /favicon.ico
+2020-04-27 12:19:51,591 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.01, 127.0.0.1:2489]
+2020-04-27 12:21:15,822 django.channels.server INFO     HTTP GET /profile/ 200 [0.03, 127.0.0.1:2502]
+2020-04-27 12:21:15,933 django.channels.server INFO     HTTP GET /static/manager/js/semantic.js 200 [0.04, 127.0.0.1:2503]
+2020-04-27 12:21:15,963 django.channels.server INFO     HTTP GET /static/manager/css/semantic.css 200 [0.08, 127.0.0.1:2502]
+2020-04-27 12:21:16,100 django.utils.autoreload INFO     C:\Users\zet\Documents\workspace\dev\cankaya\ceng-407-408-2019-2020-Rad.io---Online-Radio-Application\radio\manager\views.py changed, reloading.
+2020-04-27 12:21:18,735 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2020-04-27 12:21:19,109 daphne.server INFO     HTTP/2 support not enabled (install the http2 and tls Twisted extras)
+2020-04-27 12:21:19,109 daphne.server INFO     Configuring endpoint tcp:port=8000:interface=127.0.0.1
+2020-04-27 12:21:19,111 daphne.server INFO     Listening on TCP address 127.0.0.1:8000
+2020-04-27 12:21:19,208 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/icons.woff2 200 [0.04, 127.0.0.1:2522]
+2020-04-27 12:21:19,238 django.request WARNING  Not Found: /favicon.ico
+2020-04-27 12:21:19,251 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.04, 127.0.0.1:2522]
+2020-04-27 12:22:11,885 django.channels.server INFO     HTTP GET /profile/ 200 [0.07, 127.0.0.1:2526]
+2020-04-27 12:22:12,000 django.channels.server INFO     HTTP GET /static/manager/js/semantic.js 200 [0.06, 127.0.0.1:2527]
+2020-04-27 12:22:12,025 django.channels.server INFO     HTTP GET /static/manager/css/semantic.css 200 [0.09, 127.0.0.1:2526]
+2020-04-27 12:22:12,332 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/icons.woff2 200 [0.03, 127.0.0.1:2526]
+2020-04-27 12:22:12,454 django.request WARNING  Not Found: /favicon.ico
+2020-04-27 12:22:12,470 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:2526]
+2020-04-27 12:22:32,898 django.channels.server INFO     HTTP GET /profile/ 200 [0.04, 127.0.0.1:2534]
+2020-04-27 12:22:32,996 django.channels.server INFO     HTTP GET /static/manager/js/semantic.js 200 [0.04, 127.0.0.1:2535]
+2020-04-27 12:22:33,025 django.channels.server INFO     HTTP GET /static/manager/css/semantic.css 200 [0.07, 127.0.0.1:2534]
+2020-04-27 12:22:33,378 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/icons.woff2 200 [0.03, 127.0.0.1:2534]
+2020-04-27 12:22:33,503 django.request WARNING  Not Found: /favicon.ico
+2020-04-27 12:22:33,517 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:2534]
+2020-04-27 12:22:47,014 django.channels.server INFO     HTTP POST /profile/ 200 [0.04, 127.0.0.1:2534]
+2020-04-27 12:22:51,973 django.channels.server INFO     HTTP GET /profile/ 200 [0.04, 127.0.0.1:2534]
+2020-04-27 12:22:57,478 django.channels.server INFO     HTTP POST /profile/ 200 [0.03, 127.0.0.1:2534]
+2020-04-27 12:23:13,712 django.channels.server INFO     HTTP GET /podcast/ 200 [0.02, 127.0.0.1:2534]
+2020-04-27 12:23:14,815 django.channels.server INFO     HTTP GET /events/ 200 [0.03, 127.0.0.1:2534]
+2020-04-27 12:23:15,344 django.channels.server INFO     HTTP GET /events/ 200 [0.03, 127.0.0.1:2534]
+2020-04-27 12:23:24,071 django.channels.server INFO     HTTP GET /podcast/ 200 [0.03, 127.0.0.1:2534]
+2020-04-27 12:23:24,894 django.channels.server INFO     HTTP GET /events/ 200 [0.03, 127.0.0.1:2534]
+2020-04-27 12:23:45,594 django.channels.server INFO     HTTP GET /podcast/ 200 [0.02, 127.0.0.1:2534]
+2020-04-27 12:23:52,129 django.channels.server INFO     HTTP GET /profile/ 200 [0.04, 127.0.0.1:2534]
+2020-04-27 12:24:47,644 django.channels.server INFO     HTTP GET /profile/ 200 [0.05, 127.0.0.1:2565]
+2020-04-27 12:24:47,750 django.channels.server INFO     HTTP GET /static/manager/js/semantic.js 200 [0.05, 127.0.0.1:2566]
+2020-04-27 12:24:47,756 django.channels.server INFO     HTTP GET /static/manager/css/semantic.css 200 [0.05, 127.0.0.1:2565]
+2020-04-27 12:24:48,183 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/icons.woff2 200 [0.02, 127.0.0.1:2565]
+2020-04-27 12:24:48,184 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/outline-icons.woff2 200 [0.02, 127.0.0.1:2566]
+2020-04-27 12:24:48,385 django.request WARNING  Not Found: /favicon.ico
+2020-04-27 12:24:48,388 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:2565]
+2020-04-27 12:25:11,020 django.channels.server INFO     HTTP GET /profile/ 200 [0.05, 127.0.0.1:2572]
+2020-04-27 12:25:11,112 django.channels.server INFO     HTTP GET /static/manager/js/semantic.js 200 [0.03, 127.0.0.1:2573]
+2020-04-27 12:25:11,143 django.channels.server INFO     HTTP GET /static/manager/css/semantic.css 200 [0.07, 127.0.0.1:2572]
+2020-04-27 12:25:11,558 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/outline-icons.woff2 200 [0.03, 127.0.0.1:2573]
+2020-04-27 12:25:11,560 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/icons.woff2 200 [0.03, 127.0.0.1:2572]
+2020-04-27 12:25:11,689 django.request WARNING  Not Found: /favicon.ico
+2020-04-27 12:25:11,691 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:2572]
+2020-04-27 12:25:20,275 django.channels.server INFO     HTTP GET /profile/ 200 [0.06, 127.0.0.1:2579]
+2020-04-27 12:25:20,392 django.channels.server INFO     HTTP GET /static/manager/js/semantic.js 200 [0.06, 127.0.0.1:2580]
+2020-04-27 12:25:20,413 django.channels.server INFO     HTTP GET /static/manager/css/semantic.css 200 [0.08, 127.0.0.1:2579]
+2020-04-27 12:25:20,932 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/icons.woff2 200 [0.03, 127.0.0.1:2579]
+2020-04-27 12:25:20,934 django.channels.server INFO     HTTP GET /static/manager/css/themes/default/assets/fonts/outline-icons.woff2 200 [0.03, 127.0.0.1:2580]
+2020-04-27 12:25:21,139 django.request WARNING  Not Found: /favicon.ico
+2020-04-27 12:25:21,147 django.channels.server WARNING  HTTP GET /favicon.ico 404 [0.02, 127.0.0.1:2579]

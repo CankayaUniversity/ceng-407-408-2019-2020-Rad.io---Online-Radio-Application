@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import generic
-from .forms import NewLoginForm, NewRegisterForm
+from .forms import NewLoginForm, NewRegisterForm, EditProfileForm
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from .constants import *
@@ -61,8 +61,13 @@ def events(request):
 
 
 def profile(request):
-    form = NewRegisterForm()
-
+    form = EditProfileForm(instance=request.user)
+    if request.method == "POST":
+        form = EditProfileForm(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Success")
+        messages.error(request, str(form.errors))
     return render(request, 'manager/profile.html', {"form": form})
 
 
