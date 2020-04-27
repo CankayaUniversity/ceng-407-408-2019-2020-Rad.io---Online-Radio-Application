@@ -18,3 +18,7 @@ class Message(models.Model):
 
     def __str__(self):
         return self.author.username
+
+
+class Podcast(models.Model):
+    title = models.CharField(max_length=100)

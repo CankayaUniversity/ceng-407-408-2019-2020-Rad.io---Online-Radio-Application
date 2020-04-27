@@ -1,9 +1,14 @@
 {% extends "manager/layout.html" %}
 {% block main %}
     {% load static %}
+    <iframe class="ui center aligned container" width="560" height="315" src="https://www.youtube.com/embed/tNkZsRW7h2c"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     <div class="ui right aligned container">
-        <div class="ui comments">
-            <h3 class="ui dividing header">Chat</h3>
+
+        <div class="ui comments center aligned container">
+            <h3 class="ui dividing header center aligned container">Chat</h3>
             <div id="node">
             </div>
             <div class="ui reply form">
@@ -50,8 +55,8 @@
                 '            </div>' +
                 ''
 
-        //document.getElementById('chat-author').innerHTML += (data.username);
-        //document.getElementById('chat-log').innerText += (data.message + '\n');
+            //document.getElementById('chat-author').innerHTML += (data.username);
+            //document.getElementById('chat-log').innerText += (data.message + '\n');
         }
         ;
 

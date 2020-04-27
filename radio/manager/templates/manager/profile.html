@@ -1,3 +1,55 @@
 {% extends "manager/layout.html" %}
 {% block main %}
+    <style type="text/css">
+        body {
+            background-color: #DADADA;
+        }
+
+        body > .segment {
+            height: 100%;
+        }
+    </style>
+
+    <div class="ui placeholder segment">
+        <div class="ui one column very relaxed stackable grid">
+            <div class="column">
+                <div class="ui form">
+                    <form class="ui form" method="POST">
+                        {% csrf_token %}
+
+                        <div class="field">
+                            <label>Username</label>
+                            <div class="ui left icon input">
+                                {{ form.username }}
+                                <i class="user icon"></i>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Email</label>
+                            <div class="ui left icon input">
+                                {{ form.email }}
+                                <i class="user icon"></i>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="ui left icon input">
+                                {{ form.password1 }}
+                                <i class="lock icon"></i>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="ui left icon input">
+                                {{ form.password2 }}
+                                <i class="lock icon"></i>
+                            </div>
+                        </div>
+                        <button class="ui blue submit button" style="width: 22em">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}

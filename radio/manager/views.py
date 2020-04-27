@@ -61,7 +61,9 @@ def events(request):
 
 
 def profile(request):
-    return render(request, 'manager/profile.html')
+    form = NewRegisterForm()
+
+    return render(request, 'manager/profile.html', {"form": form})
 
 
 def default_logout(request):
