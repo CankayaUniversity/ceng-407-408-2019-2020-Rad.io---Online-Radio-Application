@@ -5,6 +5,8 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from .constants import *
 from django.contrib import messages
+from .models import *
+from django.db.models import F
 
 #@login_required(login_url='login/')
 def index(request):
@@ -48,16 +50,23 @@ def default_register(request):
 
 
 def room(request):
+    url = LiveStream.objects.all()
     room_name = 'main'
-    return render(request, 'manager/room.html', {'room_name': room_name})
+    return render(request, 'manager/room.html', {'room_name': room_name, 'url': url})
 
 
 def podcast(request):
-    return render(request, 'manager/podcast.html')
+    p = Podcast.objects.all()
+    for i in p:
+        i.view_count += 1
+        i.save()
+
+    return render(request, 'manager/podcast.html', {'podcast': p})
 
 
 def events(request):
-    return render(request, 'manager/events.html')
+    event = Event.objects.all()
+    return render(request, 'manager/events.html', {'events': event})
 
 
 def profile(request):
@@ -73,4 +82,4 @@ def profile(request):
 
 def default_logout(request):
     logout(request)
-    return render(request, 'manager/index.html')
+    return render(request, 'manager/room.html')

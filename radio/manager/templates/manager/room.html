@@ -1,10 +1,11 @@
 {% extends "manager/layout.html" %}
 {% block main %}
     {% load static %}
-    <iframe class="ui center aligned container" width="560" height="315" src="https://www.youtube.com/embed/tNkZsRW7h2c"
+    {% for a in url %}
+    <iframe class="ui center aligned container" width="560" height="315" src="{{ a }}"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    {% endfor %}
     <div class="ui right aligned container">
 
         <div class="ui comments center aligned container">
@@ -15,7 +16,7 @@
                 <div class="field">
                     <input id="chat-message-input" type="text" size="100"><br>
                 </div>
-                <input id="chat-message-submit" type="button" value="Send">
+                <input class="ui input button" id="chat-message-submit" type="button" value="Send">
             </div>
         </div>
     </div>

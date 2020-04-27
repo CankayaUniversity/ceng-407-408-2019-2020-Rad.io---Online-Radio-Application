@@ -1,23 +1,29 @@
 {% extends "manager/layout.html" %}
 {% block main %}
-    <div class="ui divided items">
-        <div class="item">
-            <div class="image">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRK7ZmnowSebqvPpvhChUJnzzu9gueC4jVoV76wDrDx7oqFK8YT&usqp=CAU" height="175" width="175">
-            </div>
-            <div class="content">
-                <a class="header">12 Years a Slave</a>
-                <div class="meta">
-                    <span class="cinema">Union Square 14</span>
+    <div class="ui center aligned container">
+        <div class="ui divided items">
+            {% for event in events %}
+                <div class="item">
+                    <div class="image">
+                        <img src="{{ event.image }}"
+                             height="175" width="175">
+                    </div>
+                    <div class="content">
+                        <a class="header">{{ event.name }}</a>
+                        <div class="meta">
+                            <span class="cinema">{{ event.location }}</span>
+                        </div>
+                        <div class="description">
+                            <p></p>
+                        </div>
+                        <div class="extra">
+                            <div class="ui label">{{ event.event_type }}</div>
+                            <div class="ui label"><i class="globe icon"></i> {{ event.description }} {{ event.date }}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="description">
-                    <p></p>
-                </div>
-                <div class="extra">
-                    <div class="ui label">IMAX</div>
-                    <div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}
