@@ -12,8 +12,10 @@ cd radio
 Install the requirements
 ```
 pip3 install -r requirements.txt
+sudo apt install redis-server
 ```
 Run the application
 ```
+sudo service redis-server start
 python3 manage.py runserver
 ```
