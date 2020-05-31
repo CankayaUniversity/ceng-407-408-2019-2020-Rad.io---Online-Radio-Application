@@ -22,7 +22,7 @@ def create_playlist(user):
     username = user.username
     refresh_access_token(user)
     spotify_users_data = UserSocialAuth.objects.all()
-    spotify_users = spotify_users_data.filter(uid=username)
+    spotify_user = spotify_users_data.filter(uid=username)
     access_token = spotify_users_data.values('extra_data').filter(uid=username)[0]
     print("Fetched access_token = ", access_token)
     access_token = access_token['extra_data']['access_token']
