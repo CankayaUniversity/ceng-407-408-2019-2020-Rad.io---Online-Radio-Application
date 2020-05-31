@@ -7,6 +7,8 @@ from .constants import *
 from django.contrib import messages
 from .models import *
 from django.db.models import F
+from .integration_handler import *
+
 
 #@login_required(login_url='login/')
 def index(request):
@@ -50,9 +52,11 @@ def default_register(request):
 
 
 def room(request):
-    url = LiveStream.objects.all()
+    urls = LiveStream.objects.all()
     room_name = 'main'
-    return render(request, 'manager/room.html', {'room_name': room_name, 'url': url})
+    username = request.user.username
+
+    return render(request, 'manager/room.html', {'room_name': room_name, 'urls': urls})
 
 
 def podcast(request):
@@ -83,3 +87,7 @@ def profile(request):
 def default_logout(request):
     logout(request)
     return render(request, 'manager/room.html')
+
+
+def add_to_playlist(request):
+    pass

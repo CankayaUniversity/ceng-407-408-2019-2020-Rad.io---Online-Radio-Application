@@ -1,11 +1,25 @@
 {% extends "manager/layout.html" %}
 {% block main %}
     {% load static %}
-    {% for a in url %}
-    <iframe class="ui center aligned container" width="560" height="315" src="{{ a }}"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    {% for url in urls %}
+    <div class="ui right aligned container">
+
+    <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="{{ url.part }}"></div>
+
+    <button class="ui green labeled icon button">
+        <i class="spotify icon"></i>
+        Add to playlist
+      </button>
+    </div>
+
     {% endfor %}
+
+    <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+    <script>
+      const player = new Plyr('#player');
+    </script>
+
+
     <div class="ui right aligned container">
 
         <div class="ui comments center aligned container">
