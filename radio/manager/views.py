@@ -89,5 +89,8 @@ def default_logout(request):
     return render(request, 'manager/room.html')
 
 
-def add_to_playlist(request):
+def spotify_handler(request, song_link):
+    data = {
+        'success': False
+    }
     pass

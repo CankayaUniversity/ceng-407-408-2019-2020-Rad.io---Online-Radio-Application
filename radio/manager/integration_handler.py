@@ -6,6 +6,7 @@ from django.contrib.auth.models import User
 from .models import *
 from radio.manager.settings import SOCIAL_AUTH_SPOTIFY_KEY
 
+
 def fetch_metadata(url):
     url = 'https://www.youtube.com/watch?v=6_b7RDuLwcI'
     ydl = youtube_dl.YoutubeDL({})
