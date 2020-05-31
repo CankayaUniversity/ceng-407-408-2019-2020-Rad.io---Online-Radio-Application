@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth import get_user_model
 from datetime import datetime
+from django.contrib.auth.models import User
 
 User = get_user_model()
 
@@ -35,3 +36,7 @@ class LiveStream(models.Model):
 
     def __str__(self):
         return "{}".format(self.url)
+
+class SpotifyData(models.Model):
+    username = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
+    playlist_id = models.CharField(max_length=255, default="")
