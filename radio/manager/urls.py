@@ -12,5 +12,5 @@ urlpatterns = [
     path('login/', views.default_login, name='login'),
     path('register/', views.default_register, name='register'),
     path('logout/', views.default_logout, name='logout'),
-    path('spotify_handler/<str:song_name>', views.spotify_handler, name='spotify_handler'),
+    path('spotify_handler/', views.spotify_handler, name='spotify_handler'),
 ]

@@ -89,8 +89,30 @@ def default_logout(request):
     return render(request, 'manager/room.html')
 
 
-def spotify_handler(request, song_link):
-    data = {
-        'success': False
-    }
+def spotify_handler(request):
+    print("test")
+    if request.method == "GET":
+        song_link = request.GET["song_link"]
+        print(song_link)
+    
+    data = {}
+    playlist_id = check_playlist(request.user)
+    try:
+        #if playlist_id is None: # if playlist does not exist create
+        playlist_id = create_playlist(request.user)
+
+        # fetct song metedata
+        artist, song = fetch_metadata(song_link)
+
+        # find song uri for spotify
+        uri = find_song_uri(request.user, song, artist)
+
+        print("URI: ", uri)
+        # add song to playlist
+        add_to_playlist(request.user, uri, playlist_id)
+
+        data.update({'success': True})
+    except:
+        data.update({'success': False})
+        raise
     return JsonResponse(data)
