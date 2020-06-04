@@ -8,7 +8,7 @@ from django.contrib import messages
 from .models import *
 from django.db.models import F
 from .integration_handler import *
-
+from django.http import JsonResponse
 
 #@login_required(login_url='login/')
 def index(request):
@@ -93,4 +93,4 @@ def spotify_handler(request, song_link):
     data = {
         'success': False
     }
-    pass
+    return JsonResponse(data)

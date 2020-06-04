@@ -4,7 +4,7 @@ from social_django.models import UserSocialAuth
 from social_django.utils import load_strategy
 from django.contrib.auth.models import User
 from .models import *
-from radio.manager.settings import SOCIAL_AUTH_SPOTIFY_KEY
+from radio.settings import SOCIAL_AUTH_SPOTIFY_KEY
 
 
 def fetch_metadata(url):

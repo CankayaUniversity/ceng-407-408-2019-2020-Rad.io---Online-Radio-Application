@@ -21,9 +21,9 @@
                 },
                 dataType: 'json',
                 success: function (data) {
-                if (data.is_taken) {
-                    alert("A user with this username already exists.");
-                }
+                    if (data.success) {
+                        toastr.success('Song added to your playlist')
+                    }
                 }
             });
         }
